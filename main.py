@@ -44,7 +44,6 @@ def level_display():
     window.blit(text_title_object, (60, 30))
 
 
-
 """window initialization"""
 
 window = pygame.display.set_mode((690, 900))
@@ -56,15 +55,16 @@ pygame.display.set_caption("Pac-man")
 image_menu = pygame.image.load("./assets/menu.png").convert()
 level_suivant_image = pygame.image.load("./assets/level_suivant.png").convert()
 option_image = pygame.image.load("./assets/option.png").convert()
-valide_option_image = pygame.image.load("./assets/fantomme_bleu.png").convert_alpha()
+valide_option_image = pygame.image.load(
+    "./assets/ghost_blue.png").convert_alpha()
 game_over_image = pygame.image.load("./assets/gameover.png").convert()
-rect_noir = pygame.image.load("./assets/rectangle_noir.png").convert()
-rect_viollet = pygame.image.load("./assets/rectangle_viollet.png").convert()
+rect_noir = pygame.image.load("./assets/rectangle_black.png").convert()
+rect_viollet = pygame.image.load("./assets/rectangle_purple.png").convert()
 pac_man = pygame.image.load("./assets/pac_man.png").convert_alpha()
-fan_bleu = pygame.image.load("./assets/fantomme_bleu.png").convert_alpha()
-fan_jaune = pygame.image.load("./assets/fantomme_jaune.png").convert_alpha()
-fan_rose = pygame.image.load("./assets/fantomme_rose.png").convert_alpha()
-fan_rouge = pygame.image.load("./assets/fantomme_rouge.png").convert_alpha()
+fan_bleu = pygame.image.load("./assets/ghost_blue.png").convert_alpha()
+fan_jaune = pygame.image.load("./assets/ghost_yellow.png").convert_alpha()
+fan_rose = pygame.image.load("./assets/ghost_pink.png").convert_alpha()
+fan_rouge = pygame.image.load("./assets/ghost_red.png").convert_alpha()
 
 """text initialization"""
 text_title = pygame.font.Font(None, 60)
